@@ -15,9 +15,8 @@
     <string name="linkedin">LinkedIn</string>
     <string name="snapchat">Snapchat</string>
     <string name="whatsapp">Whatsapp</string>
-    <string name="skype">Skype</string>
     <string name="google_plus">Google_plus</string>
     <string name="hike">Hike</string>
-    <string name="hike">Hike</string>
     <string name="apple">Apple</string>
+    <string name="skype">Skype</string>
 </resources>
