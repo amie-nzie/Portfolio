@@ -72,6 +72,14 @@ class MainActivity : AppCompatActivity() {
             if (intent.resolveActivity(packageManager)!=null)
                 startActivity(chooser)
         }
+
+        image10.setOnClickListener{
+            intent=
+                Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps?hl=en"))
+            val chooser= Intent.createChooser(intent, "Open with :")
+            if (intent.resolveActivity(packageManager)!=null)
+                startActivity(chooser)
+        }
     }
 
     override fun onStart(){
