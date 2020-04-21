@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
+import java.net.URI
 
 class MainActivity : AppCompatActivity() {
 
@@ -77,6 +78,61 @@ class MainActivity : AppCompatActivity() {
             intent=
                 Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps?hl=en"))
             val chooser= Intent.createChooser(intent, "Open with :")
+            if (intent.resolveActivity(packageManager)!=null)
+                startActivity(chooser)
+        }
+
+        image11.setOnClickListener{
+            intent=
+                Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps?hl=en"))
+            val chooser= Intent.createChooser(intent, "Open with :")
+            if (intent.resolveActivity(packageManager)!=null)
+                startActivity(chooser)
+        }
+
+        image12.setOnClickListener{
+            intent=
+                Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps?hl=en"))
+            val choooser= Intent.createChooser(intent, "Open with : ")
+            if (intent.resolveActivity(packageManager)!=null)
+                startActivity(choooser)
+        }
+        image13.setOnClickListener{
+            Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps?hl=en"))
+            val chooser=Intent.createChooser(intent, "Open with :")
+            if (intent.resolveActivity(packageManager)!=null)
+                startActivity(chooser)
+        }
+        image14.setOnClickListener{
+            Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps?hl=en"))
+            val chooser=Intent.createChooser(intent, "Open with :")
+            if (intent.resolveActivity(packageManager)!=null)
+                startActivity(chooser)
+        }
+        image15.setOnClickListener{
+            Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps?hl=en"))
+            val chooser=Intent.createChooser(intent, "Open with :")
+            if (intent.resolveActivity(packageManager)!=null)
+                startActivity(chooser)
+        }
+
+        image16.setOnClickListener{
+            Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps?hl=en"))
+            val chooser=Intent.createChooser(intent, "Open with :")
+            if (intent.resolveActivity(packageManager)!=null)
+                startActivity(chooser)
+        }
+
+        image17.setOnClickListener{
+            Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps?hl=en"))
+            val chooser=Intent.createChooser(intent, "Open with :")
+            if (intent.resolveActivity(packageManager)!=null)
+                startActivity(chooser)
+        }
+
+        image18.setOnClickListener{
+            Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps?hl=en"))
+            val chooser=Intent.createChooser(intent, "Open with :")
             if (intent.resolveActivity(packageManager)!=null)
                 startActivity(chooser)
         }
