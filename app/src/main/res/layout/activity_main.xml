@@ -1,524 +1,487 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="83dp"
-        android:layout_height="91dp"
-        android:src="@drawable/face"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="#D1C9C9"
+        android:layout_marginTop="0dp">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="205dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="12dp"
-        android:gravity="center_horizontal"
-        android:text="@string/amarachi_eke"
-        android:textAlignment="center"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/face"
+            tools:ignore="ContentDescription" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="214dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="4dp"
-        android:gravity="center_horizontal"
-        android:text="@string/mobile_developer"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.522"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="@string/amarachi_eke"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="331dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="4dp"
-        android:text="@string/craft_and_idea_lover_curious_about_the_internet_dress_maker"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:text="@string/mobile_developer"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:gravity="center_horizontal"
+            android:text="@string/craft_and_idea_lover_curious_about_the_internet_dress_maker"
+            android:textAlignment="center"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
 
 
     <LinearLayout
-        android:id="@+id/icon_1_package"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="250dp"
+        android:layout_height="457dp"
+        android:layout_marginTop="320dp"
+        android:background="#574A4747"
         android:orientation="vertical">
 
         <RelativeLayout
-            android:id="@+id/pack"
+            android:id="@+id/icon_1_package"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:layout_margin="16dp"
-            tools:ignore="UselessParent">
+            android:layout_margin="10dp"
+            tools:ignore="MissingConstraints">
 
-
-            <ImageView
-                android:id="@+id/image3"
-                android:layout_width="83dp"
-                android:layout_height="64dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="296dp"
-                android:layout_marginRight="296dp"
-                android:layout_marginBottom="12dp"
-                android:src="@mipmap/playstore"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/image4"
-                android:layout_width="83dp"
-                android:layout_height="64dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="196dp"
-                android:layout_marginRight="196dp"
-                android:layout_marginBottom="14dp"
-                android:src="@mipmap/google"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/image5"
-                android:layout_width="83dp"
-                android:layout_height="64dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="101dp"
-                android:layout_marginRight="101dp"
-                android:layout_marginBottom="14dp"
-                android:src="@mipmap/website"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/image6"
-                android:layout_width="80dp"
-                android:layout_height="70dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="9dp"
-                android:layout_marginRight="9dp"
-                android:layout_marginBottom="18dp"
-                android:src="@mipmap/facebook"
-                tools:ignore="ContentDescription" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/pack"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/image6"
-                android:layout_alignRight="@+id/image6"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="298dp"
-                android:layout_marginRight="298dp"
-                android:layout_marginBottom="3dp"
-                android:text="@string/play_store"
-                android:textSize="12sp" />
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/image6"
-                android:layout_alignRight="@+id/image6"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="214dp"
-                android:layout_marginRight="214dp"
-                android:layout_marginBottom="5dp"
-                android:text="@string/google"
-                android:textSize="12sp" />
 
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/image6"
-                android:layout_alignRight="@+id/image6"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="127dp"
-                android:layout_marginRight="127dp"
-                android:layout_marginBottom="5dp"
-                android:text="@string/website"
-                android:textSize="12sp" />
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/playstore"
+                    tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/google"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/image5"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/website"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/image6"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/facebook"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/text_1_package"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/image6"
-                android:layout_alignRight="@+id/image6"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="23dp"
-                android:layout_marginRight="23dp"
-                android:layout_marginBottom="4dp"
-                android:text="@string/facebook"
-                android:textSize="12sp" />
+                android:layout_margin="58dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:text="@string/play_store"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:text="@string/google"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:text="@string/website"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:text="@string/facebook"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/pack2"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:layout_margin="16dp"
-            tools:ignore="UselessParent">
+            android:layout_margin="10dp"
+            tools:ignore="MissingConstraints,UselessParent">
 
-
-            <ImageView
-                android:id="@+id/image7"
-                android:layout_width="83dp"
-                android:layout_height="64dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="296dp"
-                android:layout_marginRight="296dp"
-                android:layout_marginBottom="12dp"
-                android:src="@mipmap/twitter"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/image8"
-                android:layout_width="83dp"
-                android:layout_height="64dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="205dp"
-                android:layout_marginRight="205dp"
-                android:layout_marginBottom="14dp"
-                android:src="@mipmap/instagram"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/image9"
-                android:layout_width="83dp"
-                android:layout_height="64dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="117dp"
-                android:layout_marginRight="117dp"
-                android:layout_marginBottom="14dp"
-                android:src="@mipmap/pinterest"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/image10"
-                android:layout_width="80dp"
-                android:layout_height="70dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="13dp"
-                android:layout_marginRight="13dp"
-                android:layout_marginBottom="24dp"
-                android:src="@mipmap/youtube"
-                tools:ignore="ContentDescription" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/image10"
-                android:layout_alignRight="@+id/image10"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="298dp"
-                android:layout_marginRight="298dp"
-                android:layout_marginBottom="3dp"
-                android:text="@string/twitter"
-                android:textSize="12sp" />
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/image10"
-                android:layout_alignRight="@+id/image10"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="214dp"
-                android:layout_marginRight="214dp"
-                android:layout_marginBottom="5dp"
-                android:text="@string/instagram"
-                android:textSize="12sp" />
+                <ImageView
+                    android:id="@+id/image7"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/twitter"
+                    tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/image10"
-                android:layout_alignRight="@+id/image10"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="127dp"
-                android:layout_marginRight="127dp"
-                android:layout_marginBottom="5dp"
-                android:text="@string/pinterest"
-                android:textSize="12sp" />
+                <ImageView
+                    android:id="@+id/image8"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/instagram"
+                    tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/image9"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/pinterest"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/image10"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/youtube"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/image10"
-                android:layout_alignRight="@+id/image10"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="23dp"
-                android:layout_marginRight="23dp"
-                android:layout_marginBottom="4dp"
-                android:text="@string/youtube"
-                android:textSize="12sp" />
+                android:layout_marginTop="58dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:text="@string/twitter"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:text="@string/instagram"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:text="@string/pinterest"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:text="@string/youtube"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/pack3"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:layout_margin="16dp"
-            tools:ignore="UselessParent">
+            android:layout_margin="10dp"
+            tools:ignore="MissingConstraints,UselessParent">
 
-
-            <ImageView
-                android:id="@+id/image11"
-                android:layout_width="83dp"
-                android:layout_height="64dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="296dp"
-                android:layout_marginRight="296dp"
-                android:layout_marginBottom="12dp"
-                android:src="@mipmap/dribble"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/image12"
-                android:layout_width="83dp"
-                android:layout_height="64dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="205dp"
-                android:layout_marginRight="205dp"
-                android:layout_marginBottom="14dp"
-                android:src="@mipmap/linkedin"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/image13"
-                android:layout_width="83dp"
-                android:layout_height="64dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="117dp"
-                android:layout_marginRight="117dp"
-                android:layout_marginBottom="14dp"
-                android:src="@mipmap/snapchat"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/image14"
-                android:layout_width="80dp"
-                android:layout_height="70dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="13dp"
-                android:layout_marginRight="13dp"
-                android:layout_marginBottom="24dp"
-                android:src="@mipmap/whatsapp"
-                tools:ignore="ContentDescription" />
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/image14"
-                android:layout_alignRight="@+id/image14"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="298dp"
-                android:layout_marginRight="298dp"
-                android:layout_marginBottom="3dp"
-                android:text="@string/dribble"
-                android:textSize="12sp" />
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/image14"
-                android:layout_alignRight="@+id/image14"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="214dp"
-                android:layout_marginRight="214dp"
-                android:layout_marginBottom="5dp"
-                android:text="@string/linkedin"
-                android:textSize="12sp" />
+                <ImageView
+                    android:id="@+id/image11"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/dribble"
+                    tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/image14"
-                android:layout_alignRight="@+id/image14"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="127dp"
-                android:layout_marginRight="127dp"
-                android:layout_marginBottom="5dp"
-                android:text="@string/snapchat"
-                android:textSize="12sp" />
+                <ImageView
+                    android:id="@+id/image12"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/linkedin"
+                    tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/image13"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/snapchat"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/image14"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/whatsapp"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/image14"
-                android:layout_alignRight="@+id/image14"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="23dp"
-                android:layout_marginRight="23dp"
-                android:layout_marginBottom="4dp"
-                android:text="@string/whatsapp"
-                android:textSize="12sp" />
+                android:layout_marginTop="58dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:text="@string/dribble"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:text="@string/linkedin"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:text="@string/snapchat"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:text="@string/whatsapp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/pack4"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:layout_margin="16dp"
-            tools:ignore="UselessParent">
+            android:layout_margin="10dp"
+            tools:ignore="MissingConstraints,UselessParent">
 
-
-            <ImageView
-                android:id="@+id/image15"
-                android:layout_width="83dp"
-                android:layout_height="64dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="296dp"
-                android:layout_marginRight="296dp"
-                android:layout_marginBottom="12dp"
-                android:src="@mipmap/skype"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/image16"
-                android:layout_width="83dp"
-                android:layout_height="64dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="205dp"
-                android:layout_marginRight="205dp"
-                android:layout_marginBottom="14dp"
-                android:src="@mipmap/google_plus"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/image17"
-                android:layout_width="83dp"
-                android:layout_height="64dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="117dp"
-                android:layout_marginRight="117dp"
-                android:layout_marginBottom="14dp"
-                android:src="@mipmap/hike"
-                tools:ignore="ContentDescription" />
-
-            <ImageView
-                android:id="@+id/image18"
-                android:layout_width="80dp"
-                android:layout_height="70dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="13dp"
-                android:layout_marginRight="13dp"
-                android:layout_marginBottom="24dp"
-                android:src="@mipmap/apple"
-                tools:ignore="ContentDescription" />
-
-            <TextView
-                android:id="@+id/textView16"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/image18"
-                android:layout_alignRight="@+id/image18"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="298dp"
-                android:layout_marginRight="298dp"
-                android:layout_marginBottom="3dp"
-                android:text="@string/skype"
-                android:textSize="12sp" />
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView17"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/image18"
-                android:layout_alignRight="@+id/image18"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="214dp"
-                android:layout_marginRight="214dp"
-                android:layout_marginBottom="5dp"
-                android:text="@string/google_plus"
-                android:textSize="12sp" />
+                <ImageView
+                    android:id="@+id/image15"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/skype"
+                    tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/textView18"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/image18"
-                android:layout_alignRight="@+id/image18"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="127dp"
-                android:layout_marginRight="127dp"
-                android:layout_marginBottom="5dp"
-                android:text="@string/hike"
-                android:textSize="12sp" />
+                <ImageView
+                    android:id="@+id/image16"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/google_plus"
+                    tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/textView19"
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/image17"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/hike"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/image18"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:src="@mipmap/apple"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/image18"
-                android:layout_alignRight="@+id/image18"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="23dp"
-                android:layout_marginRight="23dp"
-                android:layout_marginBottom="4dp"
-                android:text="@string/apple"
-                android:textSize="12sp" />
+                android:layout_marginTop="58dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="@string/skype"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:text="@string/google_plus"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:text="@string/hike"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:text="@string/apple"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
         </RelativeLayout>
-
 
     </LinearLayout>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
