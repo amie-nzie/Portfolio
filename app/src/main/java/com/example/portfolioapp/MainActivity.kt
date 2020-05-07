@@ -17,6 +17,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Log.d(TAG, "This activity is in onCreate")
 
+        val intent =getIntent()
+        val editText =intent.getStringExtra("Nickname")
+        val editText2 = intent.getStringExtra("Password")
+        val textView22 = intent.getStringExtra("Register here")
+
+//        resultEt.text ="Details: \n\nNickname: "+editText+"\nPassword: "+editText2+""
+
         image3.setOnClickListener{
             val intent = Intent(
                 Intent.ACTION_VIEW,
@@ -28,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         image4.setOnClickListener{
-            intent =
+           val intent =
                 Intent(Intent.ACTION_VIEW,
                     Uri.parse("https://play.google.com/store/apps?hl=en"))
             val chooser = Intent.createChooser(intent, "Open with :")
@@ -37,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         image5.setOnClickListener{
-            intent=
+           val intent=
                 Intent(Intent.ACTION_VIEW,
                     Uri.parse("https://play.google.com/store/apps?hl=en"))
             val chooser= Intent.createChooser(intent, "Open with :")
@@ -46,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         image6.setOnClickListener{
-            intent=
+           val intent=
                 Intent(Intent.ACTION_VIEW,
                     Uri.parse("https://play.google.com/store/apps?hl=en"))
             val chooser = Intent.createChooser(intent, "Open with :")
@@ -55,7 +62,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         image7.setOnClickListener{
-            intent=
+           val intent=
                 Intent(Intent.ACTION_VIEW,
                     Uri.parse("https://www.google.com/url?sa=t&source=web&rct=j&url=https://twitter.com/%3Flang%3Den&ved=2ahUKEwissuej0vjoAhVTAGMBHadDAp0QjjgwAXoECAMQAQ&usg=AOvVaw1Sd3B-_cNZOLSmhw9z2lOm"))
             val chooser = Intent.createChooser(intent, "Open with :")
@@ -64,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         image8.setOnClickListener{
-            intent=
+           val intent=
                 Intent(Intent.ACTION_VIEW,
                     Uri.parse("https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.instagram.com/accounts/login/&ved=2ahUKEwiS4onb0vjoAhUw4YUKHY_kB9cQFjAAegQIAxAB&usg=AOvVaw0BRCgcMCVNSSLcNcVjPzsz&cshid=1587442168713"))
             val chooser= Intent.createChooser(intent, "Open with :")
@@ -73,7 +80,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         image9.setOnClickListener{
-            intent=
+           val intent=
                 Intent(Intent.ACTION_VIEW,
                     Uri.parse("https://play.google.com/store/apps?hl=en"))
             val chooser= Intent.createChooser( intent, "Open with :")
@@ -82,7 +89,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         image10.setOnClickListener{
-            intent=
+           val intent=
                 Intent(Intent.ACTION_VIEW,
                     Uri.parse("https://www.google.com/url?sa=t&source=web&rct=j&url=https://m.youtube.com/&ved=2ahUKEwjP0oGx1fjoAhVqzoUKHdI6DNYQjjgwAHoECAsQAw&usg=AOvVaw1gjD0qA2OtrsxdcaNbwsxk"))
             val chooser= Intent.createChooser(intent, "Open with :")
@@ -91,7 +98,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         image11.setOnClickListener{
-            intent=
+          val intent=
                 Intent(Intent.ACTION_VIEW,
                     Uri.parse("https://dribbble.com/tags/mobile"
                     ))
@@ -101,7 +108,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         image12.setOnClickListener{
-            intent=
+            val intent=
                 Intent(Intent.ACTION_VIEW,
                     Uri.parse("https://mobile.linkedin.com/"))
             val choooser= Intent.createChooser(intent, "Open with : ")
@@ -109,21 +116,24 @@ class MainActivity : AppCompatActivity() {
                 startActivity(choooser)
         }
         image13.setOnClickListener{
-            Intent(Intent.ACTION_VIEW,
+           val intent=
+               Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.google.com/?gws_rd=ssl"))
             val chooser=Intent.createChooser(intent, "Open with :")
             if (intent.resolveActivity(packageManager)!=null)
                 startActivity(chooser)
         }
         image14.setOnClickListener{
-            Intent(Intent.ACTION_VIEW,
+          val intent=
+              Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.whatsapp.com/"))
             val chooser=Intent.createChooser(intent, "Open with :")
             if (intent.resolveActivity(packageManager)!=null)
                 startActivity(chooser)
         }
         image15.setOnClickListener{
-            Intent(Intent.ACTION_VIEW,
+           val intent=
+               Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.skype.com/en/get-skype/skype-for-mobile/"))
             val chooser=Intent.createChooser(intent, "Open with :")
             if (intent.resolveActivity(packageManager)!=null)
@@ -131,7 +141,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         image16.setOnClickListener{
-            Intent(Intent.ACTION_VIEW,
+           val intent=
+               Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.google.com/?gws_rd=ssl"))
             val chooser=Intent.createChooser(intent, "Open with :")
             if (intent.resolveActivity(packageManager)!=null)
@@ -139,7 +150,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         image17.setOnClickListener{
-            Intent(Intent.ACTION_VIEW,
+           val intent=
+               Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://play.google.com/store/apps?hl=en"))
             val chooser=Intent.createChooser(intent, "Open with :")
             if (intent.resolveActivity(packageManager)!=null)
@@ -147,7 +159,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         image18.setOnClickListener{
-            Intent(Intent.ACTION_VIEW,
+          val intent=
+              Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.google.com/?gws_rd=ssl"))
             val chooser=Intent.createChooser(intent, "Open with :")
             if (intent.resolveActivity(packageManager)!=null)
