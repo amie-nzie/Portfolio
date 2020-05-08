@@ -1,28 +1,33 @@
 package com.example.portfolioapp
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import java.net.URI
 
 class MainActivity : AppCompatActivity() {
+lateinit var pref:SharedPreferences
 
     val TAG= "Main Activity"
-
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.d(TAG, "This activity is in onCreate")
+            pref=getSharedPreferences(SignUpActivity.PREF_NAME, Context.MODE_PRIVATE)
+        val show: String? =pref.getString("usermail","")
+        val showMail:TextView?=findViewById(R.id.details)
+        if (showMail != null) {
+            showMail.text=show
+        }
 
-        val intent =getIntent()
-        val editText =intent.getStringExtra("Nickname")
-        val editText2 = intent.getStringExtra("Password")
-        val textView22 = intent.getStringExtra("Register here")
 
-//        resultEt.text ="Details: \n\nNickname: "+editText+"\nPassword: "+editText2+""
 
         image3.setOnClickListener{
             val intent = Intent(

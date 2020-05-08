@@ -50,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
         var editor:SharedPreferences.Editor=pref.edit()
         editor.putString("usermail",getEmail)
         editor.apply()
-        var tea=Intent(this,SignUpActivity::class.java)
+        var tea=Intent(this,MainActivity::class.java)
         startActivity(tea)
         finish()
         Toast.makeText(this,"Welcome",Toast.LENGTH_SHORT).show()
